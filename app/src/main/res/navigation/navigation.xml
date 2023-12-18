@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/landing">
+
+    <fragment
+        android:id="@+id/landing"
+        android:name="com.smir.sinterklaas.landing"
+        android:label="fragment_landing"
+        tools:layout="@layout/fragment_landing" >
+        <action
+            android:id="@+id/action_landing_to_signup"
+            app:destination="@id/signup"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/signup"
+        android:name="com.smir.sinterklaas.signup"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signup_to_landing"
+            app:destination="@id/landing" />
+        <action
+            android:id="@+id/action_signup_to_summary"
+            app:destination="@id/summary" />
+    </fragment>
+    <fragment
+        android:id="@+id/summary"
+        android:name="com.smir.sinterklaas.summary"
+        android:label="fragment_summary"
+        tools:layout="@layout/fragment_summary" >
+        <action
+            android:id="@+id/action_summary_to_landing"
+            app:destination="@id/landing" />
+    </fragment>
+</navigation>
