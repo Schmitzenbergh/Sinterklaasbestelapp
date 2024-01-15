@@ -46,11 +46,14 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <TextView
                 android:id="@+id/summary_txt_length_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lengte" />
+                android:text="Lengte"
+                android:paddingEnd="10dp"/>
+
             <TextView
                 android:id="@+id/summary_txt_length"
                 android:layout_width="wrap_content"
@@ -61,16 +64,20 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <TextView
                 android:id="@+id/summary_txt_amount_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Amount" />
+                android:text="Amount"
+                android:paddingEnd="10dp"/>
+
             <TextView
                 android:id="@+id/summary_txt_amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                />
         </TableRow>
 
         <TableRow
@@ -80,7 +87,8 @@
                 android:id="@+id/summary_txt_other_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Other" />
+                android:text="Other"
+                android:paddingEnd="10dp"/>
             <TextView
                 android:id="@+id/summary_txt_other"
                 android:layout_width="wrap_content"
